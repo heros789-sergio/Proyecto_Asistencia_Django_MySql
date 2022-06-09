@@ -1,0 +1,78 @@
+*{
+  font-family: sans-serif;
+}
+
+.tabla{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.tabla thead {
+  background-color: #336288;
+  color: white;
+}
+
+.tabla tr{
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.tabla td, .tabla th {
+  border: none;
+  padding: 8px 20px;
+  border-right: 1px solid #cbcbcb;
+  width: 260px;
+}
+
+.NombreEstudiante{
+  text-align: left;
+}
+
+.formulario h2 {
+  font-size: 16px;
+  color: #001F3F;
+  margin-bottom: 20px;
+  margin-left: 20px; 
+}
+.formulario > div {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc; 
+}
+.formulario .radio label{
+  display: inline-block;
+  cursor: pointer;
+  color: #0074D9;
+  position: relative;
+  padding: 5px 10px 5px 40px;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+  .formulario .radio label:hover{
+    background: rgba(0, 116, 117, 0.1); 
+  }
+  .formulario .radio label:before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 15px;
+    bottom: 4px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #0074D9; 
+  }
+.formulario input[type="radio"] {
+  display: none; 
+}
+  .formulario input[type="radio"]:checked + label:before {
+    display: none; 
+  }
+  .formulario input[type="radio"]:checked + label{
+    padding: 5px 15px;
+    background: #0074D9;
+    border-radius: 2px;
+    color: #fff; 
+  }
+

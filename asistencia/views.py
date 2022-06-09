@@ -9,3 +9,5 @@ def inicio(request): #definimos la vista inicio
 def seccion1(request):
   return render(request, 'paginas/seccion1.html') #renderizamos el archivo seccion1.html
 
+def asistencia(request):
+  return render(request, 'paginas/asistencia.html')
